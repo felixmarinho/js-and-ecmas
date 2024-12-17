@@ -8,7 +8,7 @@
       body {
         background-color: rgb(151, 157, 189);
         color: white;
-        font: normal 20pt Arial;
+        font: normal 20pt Arial; /* COmentario CSS*/
       }
 
       h1 {
@@ -19,11 +19,11 @@
 
   <body>
     <h1>Hello, World!</h1>
+    <!-- Comentario-->
     <p>Já me livrei da maldição.</p>
     <script>
-      window.alert("Minha primeira mensagem"); //Alerta sobre mensagem
-      window.confirm("Está gostando de Java Script?"); //janela com botão OK e Cancel
-      window.prompt("Qual é seu nome?"); //Vai perguntar o nome.
+      var nome = window.prompt("Qual é seu nome?"); //Vai perguntar o nome.
+      window.alert("É um grande prazer te conhecer, " + nome + "!");
     </script>
   </body>
 </html>
