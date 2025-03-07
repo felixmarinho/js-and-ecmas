@@ -22,21 +22,11 @@
     <!-- Comentario-->
     <p>Já me livrei da maldição.</p>
     <script>
-      var n1 = Number(window.prompt("Digite um númenro")); //conversão de string para numero
-
-      var n2 = Number(window.prompt("Digite outro númenro")); //conversão de string para numero
-      var soma_n1n2 = n1 + n2;
-      window.alert(
-        "A soma do primeiro número com o segundo número é: " +
-          String(soma_n1n2) +
-          "."
-      ); //conversão de numero para string
-      window.alert(
-        "A soma do primeiro número com o segundo número é: " +
-          soma_n1n2.toString() +
-          "."
-      ); //conversão de numero para string
-      document.write(`A soma entre ${n1} e ${n2} é igual a ${soma_n1n2}`); //template strings com placeholder `${}`
+      var n1 = Number(prompt("Digite um número"));
+      var n2 = Number(prompt("Digite outro número"));
+      s = n1 + n2;
+      //alert("A sona dos valores é " + String(s) + ".");
+      alert(`A soma dos valores ${n1} e ${n2} é igual a ${s} `);
     </script>
   </body>
 </html>
