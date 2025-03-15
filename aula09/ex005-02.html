@@ -16,11 +16,14 @@
     <h1>Iniciando com DOM</h1>
     <p>Aqui vai o resultado</p>
     <p>Aprendendo a usar o <strong>DOM</strong> em Javascript.</p>
-    <div>Clique em mim</div>
+    <div class="msg">Clique em mim</div>
     <script>
-      let p1 = document.getElementsByTagName("p")[1];
-      corpo = window.document.body;
-      window.alert(p1.innerText);
+      // d = window.document.getElementById("msg");
+      // d.style.background = "green";
+      // d.innerText = "Estou aguardando...";
+      // window.document.getElementById("msg").innerText = "Olá!";
+      var d = window.document.getElementsByClassName("msg")[0];
+      d.innerText = "Olá!";
     </script>
   </body>
 </html>
