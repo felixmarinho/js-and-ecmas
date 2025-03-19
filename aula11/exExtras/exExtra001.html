@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Exercício extra 001</h1>
+    <script>
+      window.alert("Il mio amico ho bisogno di un numero.");
+
+      mensagem = Number.parseFloat(
+        window.prompt("Escolha um número de 0 a 10")
+      );
+
+      cpf = parseInt(window.prompt("Digite o seu CPF:"));
+      cpfString = Number.toString(cpf);
+
+      CotacaoDolar = parseFloat(window.prompt("Qual o valor do dólar hoje?"));
+      mensagem2 = window.prompt("digite algo.");
+
+      document.write(`Seu numero é ` + mensagem.toFixed(2) + `<br/>`);
+      document.write(`Seu numero é ${mensagem.toFixed(2)} <br/>`);
+
+      document.write(
+        `O valor do dólar somado ao numero inicial é ${Number.parseInt(
+          mensagem + CotacaoDolar
+        )}<br/>
+        E o número do CPF convertido para string é: ${cpf} <br/>
+        ${mensagem2} Seu cpf tem ${mensagem2.length} numeros <br/>
+        enquanto seu nome em maiusculas é ${mensagem2.toUpperCase()} <br/>
+        ${cpf.toLocaleString("pt-Br", { style: "currency", currency: "BRL" })}`
+      );
+    </script>
+  </body>
+</html>
